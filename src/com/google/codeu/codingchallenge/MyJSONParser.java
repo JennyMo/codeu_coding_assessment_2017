@@ -20,7 +20,47 @@ final class MyJSONParser implements JSONParser {
 
   @Override
   public JSON parse(String in) throws IOException {
-    // TODO: implement this
+
+  	boolean encounteredQuote = False // checks if current character is inside quotes
+
+  	String holdString = new String() // string used to hold current characters
+    
+  	// loop to iterate through each character in input string 
+  	for (int i = 0; i < in.length(); i++) {
+
+  		if (encounteredQuote == False): // characters that aren't inside quotes
+
+  			if (in.charAt(i) == '\"'):
+
+  			else if (in.charAt(i) == '{'):
+
+  			else if (in.charAt(i) == '}'):
+
+  			else if (in.charAt(i) == '"'):
+
+  			else if (in.charAt(i) == ':'):
+
+  			else if (in.charAt(i) == ','):
+
+  			else if (in.charAt(i) == ' '):
+
+  			else:
+
+
+  		else: // characters that are inside quotes
+
+  			if():
+
+  			else:
+  				holdString += in.charAt(i);
+
+
+  	}
+
+
+
+
+
     return new MyJSON();
   }
 }
